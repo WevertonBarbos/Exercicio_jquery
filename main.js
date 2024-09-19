@@ -4,9 +4,13 @@ $(document).ready(function () {
         e.preventDefault();
         const name = $('#name').val();
         const novoName = $('<li></li>');
-        $(`<li>${name}</li>`).appendTo(novoName);
+        $(`<span>${name}</span>`).appendTo(novoName);
         $(novoName).appendTo('ul');
         $('#name').val('')
+    })
+
+    $(novoName).on('click', function() {
+        $(this).toggleClass('riscado')
     })
 
 })
