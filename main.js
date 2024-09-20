@@ -7,10 +7,10 @@ $(document).ready(function () {
         $(`<span>${name}</span>`).appendTo(novoName);
         $(novoName).appendTo('ul');
         $('#name').val('')
-    })
 
-    $(novoName).on('click', function() {
-        $(this).toggleClass('riscado')
+        $(novoName).on('click', function() {
+            $(this).toggleClass('riscado')
+        })
     })
 
 })
